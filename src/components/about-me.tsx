@@ -12,7 +12,7 @@ const AboutMe = () => {
             I, Me & Myself
           </p>
 
-          <div className="font-mono italic text-lg sm:text-sm text-indigo-200 animate-fadeIn pr-14">
+          <div className="font-mono italic text-lg sm:text-sm text-indigo-200 animate-fadeIn pr-8">
             I’m a Blockchain Developer located in India. I have a serious
             passion for programming, especially for development on Web3 as well
             as Game Development. <br />
@@ -35,7 +35,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div
-          className={` ${styles.imageZoomable} ${styles.shadowing} m-5 w-2/6 lg:w-1/3 md:w-1/3 sm:w-2/3 mt-14 sm:mb-10 self-center rounded cursor-none block md:hidden`}
+          className={` ${styles.imageZoomable} ${styles.shadowing} w-2/6 lg:w-1/3 md:w-1/3 sm:w-2/3 mt-14 sm:mb-10 self-center rounded cursor-none block md:hidden mr-6`}
         >
           <Image src={Me} />
           <p className="font-mono text-indigo-200 absolute">
