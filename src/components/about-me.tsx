@@ -35,7 +35,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div
-          className={` ${styles.imageZoomable} ${styles.shadowing} w-2/6 lg:w-1/3 md:w-1/3 sm:w-2/3 mt-14 sm:mb-10 self-center rounded cursor-none block md:hidden mr-6`}
+          className={` ${styles.imageZoomable} ${styles.shadowing} w-2/6 lg:w-1/3 md:w-1/3 sm:w-5/6 mt-14 sm:mb-10 self-center rounded cursor-none block md:hidden mr-8`}
         >
           <Image src={Me} />
           <p className="font-mono text-indigo-200 absolute">
