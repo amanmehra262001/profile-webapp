@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const MySkillsChart = () => {
   return (
-    <div className="w-1/3 mt-10 pt-5 sm:pt-0 sm:flex sm:flex-col sm:w-2/3 sm:mt-0 sm:ml-10 overflow-hidden">
+    <div className="w-1/3 mt-10 pt-5 sm:pt-0 sm:flex sm:flex-col sm:w-9/12 sm:mt-0 sm:ml-10 overflow-hidden">
       <div>
         <motion.div className="flex flex-col w-4/5 font-mono non-italic font-bold ml-7 text-lg sm:text-sm text-indigo-200">
           {' '}
