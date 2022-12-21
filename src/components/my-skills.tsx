@@ -28,7 +28,7 @@ const MySkills = () => {
   ];
   return (
     <div className="w-3/5 sm:w-full flex flex-col justify-self-center p-2 mb-14 overflow-hidden">
-      <p className="text-xxxxxl sm:text-xxl flex font-semibold mt-12 sm:mt-0 mb-8 animate-fadeIn font-serif text-teal-300 cursor-none">
+      <p className="text-xxxxxl sm:text-xxl flex font-semibold mt-12 sm:mt-0 animate-fadeIn font-serif text-teal-300 cursor-none">
         {/* {text.map((letter, i) => (
           <div className="flex" key={i}>
             <p className="font-serif hover:animate-wiggle text-teal-300 cursor-none">

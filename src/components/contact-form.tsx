@@ -16,7 +16,7 @@ const ContactForm = () => {
         ))} */}
         Contact Me
       </p>
-      <div className="w-1/2 sm:w-full flex flex-col font-mono italic mt-5 ml-7 sm:ml-4 text-lg sm:text-sm text-indigo-200">
+      <div className="w-1/2 sm:w-full flex flex-col font-mono italic mt-2 ml-7 sm:ml-4 text-lg sm:text-sm text-indigo-200">
         <p className="mb-2 text-xl font-bold not-italic animate-fadeIn">
           Drop me a line
         </p>
