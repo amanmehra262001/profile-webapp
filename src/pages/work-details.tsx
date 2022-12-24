@@ -15,6 +15,7 @@ type workType = {
   images: Array<string>;
   projectLink: string;
   visibility: boolean;
+  keyImplemetations: Array<string>;
 };
 
 const WorkDetails: NextPage = () => {
@@ -54,9 +55,17 @@ const WorkDetails: NextPage = () => {
         </div>
         <div className="w-11/12 sm:w-full ml-12 self-center text-center font-mono italic text-lg sm:text-sm text-indigo-200 animate-fadeIn pr-14">
           {work.description}
-          <div className="font-mono italic text-xl text-teal-400 mt-6 ml-5 animate-fadeIn underline">
+          <br />
+          <br />
+          <div className="text-left flex flex-col">
+            <p className="font-bold text-xl">Key Implementations:</p>
+            {work.keyImplementations.map((implementation: string) => (
+              <p>⭐ {implementation}</p>
+            ))}
+          </div>
+          <div className="font-mono italic text-teal-400 mt-6 ml-5 animate-fadeIn underline">
             <a target="_blank" href={work.projectLink}>
-              See project!
+              Visit the live project!
             </a>
           </div>
         </div>

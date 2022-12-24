@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { wrap } from 'popmotion';
+import styles from '@/styles/External.module.css';
 
 const variants = {
   enter: (direction: number) => {
@@ -49,10 +50,10 @@ const Slideshow = ({ images }: { images: Array<string> }) => {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center mb-5">
+    <div className="w-full flex flex-col justify-center mb-5 p-2">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
-          className="w-full rounded-lg"
+          className={`${styles.shadowing} w-full rounded-lg`}
           key={page}
           src={images[imageIndex]}
           custom={direction}
