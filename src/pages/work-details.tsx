@@ -36,11 +36,6 @@ const WorkDetails: NextPage = () => {
     if (query.id) {
       retrieveDoc();
       console.log(work);
-      // workData.map((workConst: any) => {
-      //   if (workConst.id == query.id) {
-      //     setWork(workConst);
-      //   }
-      // });
     } else {
       router.push('/work');
     }
@@ -60,7 +55,9 @@ const WorkDetails: NextPage = () => {
         <div className="w-11/12 sm:w-full ml-12 self-center text-center font-mono italic text-lg sm:text-sm text-indigo-200 animate-fadeIn pr-14">
           {work.description}
           <div className="font-mono italic text-xl text-teal-400 mt-6 ml-5 animate-fadeIn underline">
-            <a href={work.projectLink}>See project!</a>
+            <a target="_blank" href={work.projectLink}>
+              See project!
+            </a>
           </div>
         </div>
       </div>
