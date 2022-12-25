@@ -10,9 +10,7 @@ const Skills: NextPage = () => {
         <title>AM | Blockchain Developer: My Skills</title>
       </Head>
       <MySkills />
-      {/* <div className="sm:mt-12 sm:mb-12 flex justify-center items-center"> */}
       <MySkillsChart />
-      {/* </div> */}
     </div>
   );
 };

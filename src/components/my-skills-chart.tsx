@@ -96,12 +96,12 @@ const MySkillsChart = () => {
         </p>
       </div>
       <div className="bg-slate-600 font-bold text-indigo-200 flex flex-col items-center p-2 rounded mb-14 animate-fadeIn">
-        <p>Game Development</p>
+        <p>Android Development</p>
         <hr className="w-4/5 mt-2 mb-2" />
         <p className="">
-          My first exposure towards the computer was as a gamer. This passion of
-          mine towards gaming was the reason I decided to work with Unity and
-          C#. Following on this pathway I started working with Unity and C#.
+          A forward-thinking developer offering more than three years of
+          experience building, integrating, testing, and supporting Android
+          applications for mobile and tablet devices on the Android platform.
           <strong> Parshurama</strong>!
         </p>
       </div>

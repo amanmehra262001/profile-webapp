@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <AnimatePresence mode="wait">
       <div className=" min-h-screen min-w-screen bg-gradient-to-r from-[#030129] to-[#040311] flex sm:flex-col 4k:flex-col z-10">
         <Head>
-          <title>AboutMe</title>
+          <title>AM | Blockchain Developer | Web & Game Developer</title>
         </Head>
         <Navbar />
         <div className="fixed w-1/6 h-screen sm:hidden 4k:hidden">
