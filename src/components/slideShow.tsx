@@ -79,7 +79,7 @@ const Slideshow = ({ images }: { images: Array<string> }) => {
           }}
         />
       </AnimatePresence>
-      <div className=" w-3/5 flex justify-between self-center h-9">
+      <div className=" w-3/5 flex justify-between self-center h-9 mt-5">
         <button className="next" onClick={() => paginate(1)}>
           ⬅️
         </button>

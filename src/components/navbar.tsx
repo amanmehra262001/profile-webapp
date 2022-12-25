@@ -68,7 +68,7 @@ const Navbar: NextComponentType = () => {
           }}
         >
           {' '}
-          <MenuButton name="Skill" linked="/skills" />
+          <MenuButton name="Skills" linked="/skills" />
         </motion.div>
 
         <motion.div

@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import { GIT_HUB_LINK, GMAIL_LINK, LINKEDIN_LINK } from '@/constants/constants';
 
 const Sidebar: NextComponentType = () => {
   return (
@@ -39,7 +40,7 @@ const Sidebar: NextComponentType = () => {
           whileTap={{ scale: 0.9 }}
         >
           {' '}
-          <MenuButton name="Skill" linked="/skills" />
+          <MenuButton name="Skills" linked="/skills" />
         </motion.div>
 
         <motion.div
@@ -60,21 +61,27 @@ const Sidebar: NextComponentType = () => {
           <MenuButton name="Contact" linked="/contact" />
         </motion.div>
         <motion.div className="mt-9 w-1/3 text-indigo-200 flex justify-between">
-          <FontAwesomeIcon
-            className="hover:text-cyan-300"
-            icon={faGithub}
-            // size="2x"
-          />
-          <FontAwesomeIcon
-            className="hover:text-cyan-300"
-            icon={faLinkedin}
-            // size="2x"
-          />
-          <FontAwesomeIcon
-            className="hover:text-cyan-300"
-            icon={faEnvelope}
-            // size="2x"
-          />
+          <a href={GIT_HUB_LINK} target="_blank">
+            <FontAwesomeIcon
+              className="hover:text-cyan-300"
+              icon={faGithub}
+              // size="2x"
+            />
+          </a>
+          <a href={LINKEDIN_LINK} target="_blank">
+            <FontAwesomeIcon
+              className="hover:text-cyan-300"
+              icon={faLinkedin}
+              // size="2x"
+            />
+          </a>
+          <a href={GMAIL_LINK} target="_blank">
+            <FontAwesomeIcon
+              className="hover:text-cyan-300"
+              icon={faEnvelope}
+              // size="2x"
+            />
+          </a>
         </motion.div>
       </div>
     </>

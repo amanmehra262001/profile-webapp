@@ -4,6 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 import styles from '@/styles/External.module.css';
+import { GIT_HUB_LINK, GMAIL_LINK, LINKEDIN_LINK } from '@/constants/constants';
 
 const ContactAddress = () => {
   return (
@@ -24,21 +25,30 @@ const ContactAddress = () => {
         FOLLOWME
       </p>
       <div className="mt-14 w-1/2 sm:w-3/5 text-indigo-200 flex justify-between animate-fadeIn">
-        <FontAwesomeIcon
-          className="hover:text-cyan-300"
-          icon={faGithub}
-          size="2x"
-        />
-        <FontAwesomeIcon
-          className="hover:text-cyan-300"
-          icon={faLinkedin}
-          size="2x"
-        />
-        <FontAwesomeIcon
-          className="hover:text-cyan-300"
-          icon={faEnvelope}
-          size="2x"
-        />
+        <a href={GIT_HUB_LINK} target="_blank">
+          {' '}
+          <FontAwesomeIcon
+            className="hover:text-cyan-300"
+            icon={faGithub}
+            size="2x"
+          />
+        </a>
+        <a href={LINKEDIN_LINK} target="_blank">
+          {' '}
+          <FontAwesomeIcon
+            className="hover:text-cyan-300"
+            icon={faLinkedin}
+            size="2x"
+          />
+        </a>
+        <a href={GMAIL_LINK} target="_blank">
+          {' '}
+          <FontAwesomeIcon
+            className="hover:text-cyan-300"
+            icon={faEnvelope}
+            size="2x"
+          />
+        </a>
       </div>
     </div>
   );
