@@ -1,12 +1,10 @@
 import type { NextPage } from 'next';
-import styles from '@/styles/External.module.css';
-import Link from 'next/link';
 import Slideshow from '@/components/slideShow';
 import { useState, useEffect } from 'react';
-import Router, { useRouter } from 'next/router';
-import { workData } from '@/constants';
+import { useRouter } from 'next/router';
 import { database as db } from '@/firebase/firebase-config';
-import { collection, doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
+import Head from 'next/head';
 
 type workType = {
   Company: string;
@@ -44,6 +42,9 @@ const WorkDetails: NextPage = () => {
   return (
     work && (
       <div className="w-full flex flex-col justify-center rounded-lg overflow-hidden mb-9">
+        <Head>
+          <title>AM | Blockchain Developer: Work Details</title>
+        </Head>
         <div className="w-11/12 self-center mt-5 rounded-lg overflow-hidden">
           <Slideshow images={work.images} />
         </div>

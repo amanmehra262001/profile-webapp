@@ -3,15 +3,11 @@ import type { AppProps } from 'next/app';
 import Sidebar from '@/components/sidebar';
 import Navbar from '@/components/navbar';
 import Head from 'next/head';
-import Image from 'next/image';
-// import bg from '../assets/bg.webp';
+import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      {/* <div className="h-screen w-screen fixed z-0 opacity-50 overflow-hidden sm:hidden md:hidden ">
-        <Image src={bg} />
-      </div> */}
+    <AnimatePresence mode="wait">
       <div className=" min-h-screen min-w-screen bg-gradient-to-r from-[#030129] to-[#040311] flex sm:flex-col 4k:flex-col z-10">
         <Head>
           <title>AboutMe</title>
@@ -24,9 +20,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </div>
       </div>
-    </>
+    </AnimatePresence>
   );
 }
 
 export default MyApp;
-// bg-gradient-to-r from-[#030129] to-[#040311]

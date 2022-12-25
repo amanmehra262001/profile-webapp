@@ -87,21 +87,21 @@ const MySkillsChart = () => {
         </div>
       </div>
       <div className="bg-slate-600 font-bold text-indigo-200 flex flex-col items-center p-2 rounded mb-7 animate-fadeIn">
-        <p>Crypto Swaping Pool</p>
+        <p>Blockchain & Web3.0</p>
         <hr className="w-4/5 mt-2 mb-2" />
         <p className="flex ">
-          Worked with Neolen group, and successfully created a crypto pool with
-          the UI. For any crpto enthusiast to either stake in or swap their
-          crypto with other compatible currencies.
+          Web3: the concept of read, write and own, is one of the internet
+          breaking and constantly evolving feild in the tech world. De-fi and
+          the Non-Fungible Tokens are the areas that attract me the most.
         </p>
       </div>
       <div className="bg-slate-600 font-bold text-indigo-200 flex flex-col items-center p-2 rounded mb-14 animate-fadeIn">
-        <p>Avtaram</p>
+        <p>Game Development</p>
         <hr className="w-4/5 mt-2 mb-2" />
         <p className="">
-          An open world 3PP game that revolve around the 6th avatar of the
-          almighty Lord Vishnu. Covers the most epic and mind blowing combat
-          scenes and the most exceptional life story of the lord{' '}
+          My first exposure towards the computer was as a gamer. This passion of
+          mine towards gaming was the reason I decided to work with Unity and
+          C#. Following on this pathway I started working with Unity and C#.
           <strong> Parshurama</strong>!
         </p>
       </div>

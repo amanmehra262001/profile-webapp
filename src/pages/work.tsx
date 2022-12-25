@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import styles from '@/styles/External.module.css';
 import WorkCard from '@/ui/work-card';
-import { workData } from '@/constants';
 import { database as db } from '@/firebase/firebase-config';
 import { collection, query, getDocs, where } from 'firebase/firestore';
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 
 type workDataType = [
   string,
@@ -51,6 +51,9 @@ const Work: NextPage = () => {
 
   return (
     <div className="w-full flex flex-wrap sm:justify-center">
+      <Head>
+        <title>AM | Blockchain Developer: Work</title>
+      </Head>
       {works?.map((work) => (
         <WorkCard
           key={work[0]}
