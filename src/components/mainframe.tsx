@@ -165,7 +165,7 @@ const Mainframe = () => {
           duration: 1,
         }}
       >
-        Web Developer / Game Developer
+        Web Developer / Android Developer
       </motion.div>
       <motion.div
         initial={{
