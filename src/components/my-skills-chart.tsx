@@ -102,7 +102,6 @@ const MySkillsChart = () => {
           A forward-thinking developer offering more than three years of
           experience building, integrating, testing, and supporting Android
           applications for mobile and tablet devices on the Android platform.
-          <strong> Parshurama</strong>!
         </p>
       </div>
     </div>
