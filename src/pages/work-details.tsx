@@ -28,13 +28,13 @@ const WorkDetails: NextPage = () => {
     if (docSnap.exists()) {
       setWork(docSnap.data());
     } else {
-      console.log('No such document');
+      //console.log('No such document');
     }
   };
   useEffect(() => {
     if (query.id) {
       retrieveDoc();
-      console.log(work);
+      //console.log(work);
     } else {
       router.push('/work');
     }

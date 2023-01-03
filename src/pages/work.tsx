@@ -35,14 +35,14 @@ const Work: NextPage = () => {
       const allWorks: any = [];
       querySnapshot.forEach((doc) => {
         // docData.push(doc.data());
-        console.log(doc.id, ' => ', doc.data());
+        //console.log(doc.id, ' => ', doc.data());
         allWorks.push([doc.id, doc.data()]);
       });
       // set docData;
       setWorks(allWorks);
       setLoading(false);
     } catch (error) {
-      console.log('Error getting document:', error);
+      //console.log('Error getting document:', error);
     }
   };
 
@@ -51,7 +51,7 @@ const Work: NextPage = () => {
   }, []);
 
   useEffect(() => {
-    console.log('Works are set to :', works);
+    //console.log('Works are set to :', works);
   }, [works]);
 
   return (

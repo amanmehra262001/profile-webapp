@@ -4,8 +4,15 @@ import Sidebar from '@/components/sidebar';
 import Navbar from '@/components/navbar';
 import Head from 'next/head';
 import { AnimatePresence } from 'framer-motion';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    console.log(
+      '%c Welcome fellow developer!😉',
+      'font-size: 20px; font-family: arial; color: #8C00CE;'
+    );
+  }, []);
   return (
     <AnimatePresence mode="wait">
       <div className=" min-h-screen min-w-screen bg-gradient-to-r from-[#030129] to-[#040311] flex sm:flex-col 4k:flex-col z-10">

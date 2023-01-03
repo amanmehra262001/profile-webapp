@@ -12,7 +12,7 @@ const UtilityButton = ({
   linked: string;
   width: string;
 }) => {
-  console.log(linked);
+  //console.log(linked);
   return (
     <Link href={linked}>
       <div
