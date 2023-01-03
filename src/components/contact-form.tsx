@@ -66,7 +66,7 @@ const ContactForm = () => {
   return (
     <>
       <ToastContainer />
-      <form className="w-full sm:w-4/5 flex flex-col justify-self-center ml-5 mb-10 sm:mr-14">
+      <form className="w-full ml-4 sm:w-11/12 flex flex-col justify-self-center mb-10 sm:mr-14">
         <p className="w-full text-xxxxxl sm:text-xxl flex font-semibold mt-12 sm:mt-0 animate-fadeIn font-serif text-teal-300 cursor-none">
           {/* {text.map((letter, i) => (
           <div className="flex" key={i}>
@@ -77,7 +77,7 @@ const ContactForm = () => {
         ))} */}
           Contact Me
         </p>
-        <div className="w-1/2 sm:w-full flex flex-col font-mono italic mt-2 ml-7 sm:ml-4 text-lg sm:text-sm text-indigo-200">
+        <div className="w-4/5 sm:w-full flex flex-col font-mono italic mt-2 text-lg sm:text-sm text-indigo-200">
           <p className="mb-2 text-xl font-bold not-italic animate-fadeIn">
             Drop me a line
           </p>
@@ -112,11 +112,12 @@ const ContactForm = () => {
             className={`${styles.shadowing} w-full bg-slate-500 px-5 py-3 rounded mt-2 hover:border-2 hover:border-teal-300 animate-fadeIn`}
             placeholder="Subject"
           />
-          <input
-            type="text"
+          <textarea
+            // type="text"
             name="description"
             value={description}
             onChange={handleChange}
+            // height={100}
             className={`${styles.shadowing} w-full bg-slate-500 px-5 py-3 rounded mt-2 hover:border-2 hover:border-teal-300 animate-fadeIn`}
             placeholder="Description"
             required
