@@ -31,7 +31,7 @@ const MySkills = () => {
       <p className="text-xxxxxl sm:text-xxl flex font-semibold mt-12 sm:mt-0 animate-fadeIn text-teal-300 cursor-none font-serif">
         Skills & Experience
       </p>
-      <div className="w-4/5 sm:w-screen p-5 font-mono italic text-lg sm:text-sm text-indigo-200 animate-fadeIn">
+      <div className="sm:w-screen pt-5 pr-4 font-mono italic text-lg sm:text-sm text-indigo-200 animate-fadeIn">
         When I was in second year of my graduation, I got my first work as a
         freelance working on AutoCad. After that I’ve done various projects
         related to the same. Later in my third year of graduation, I got exposed
