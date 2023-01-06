@@ -66,7 +66,7 @@ const ContactForm = () => {
   return (
     <>
       <ToastContainer />
-      <form className="w-full ml-4 sm:w-11/12 flex flex-col justify-self-center mb-10 sm:mr-14">
+      <form className="w-full ml-8 sm:ml-4 sm:w-11/12 flex flex-col justify-self-center mb-10 sm:mr-14">
         <p className="w-full text-xxxxxl sm:text-xxl flex font-semibold mt-12 sm:mt-0 animate-fadeIn font-serif text-teal-300 cursor-none">
           {/* {text.map((letter, i) => (
           <div className="flex" key={i}>
