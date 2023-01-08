@@ -15,12 +15,12 @@ const AboutMe = () => {
           <div className="font-mono italic text-lg sm:text-sm text-indigo-200 animate-fadeIn pr-8">
             I’m a Blockchain Developer located in India. I have a serious
             passion for programming, especially for development on Web3 as well
-            as Game Development. <br />
+            as Game Development.
+            <br />
             <br />
             Result oriented, cheerful, positive person with leadership
-            qualities. Always tending to learn and grow even more. Hitting the
-            gym makes me who I am, more focused toward my goals. A family person
-            and son of a beautiful couple. <br /> <br />
+            qualities. Always tending to learn and grow even more. A family
+            person and son of a beautiful couple. <br /> <br />
             Interested in the entire Web3 spectrum and working on ambitious
             projects with positive people. <br /> <br />
             Fueled by high energy levels and boundless enthusiasm, I'm easily
