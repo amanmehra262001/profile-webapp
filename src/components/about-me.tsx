@@ -39,9 +39,9 @@ const AboutMe = () => {
         >
           <Image src={Me} />
           <p className="font-mono text-indigo-200 absolute">
-            Kota <br />
-            Rajasthan
-            <br /> 26 Jan 2001
+            Foodie, <br />
+            Teck Geek, <br />
+            Workout Enthusiast,
           </p>
         </div>
       </div>
