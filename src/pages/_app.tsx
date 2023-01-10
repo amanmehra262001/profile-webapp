@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar';
 import Head from 'next/head';
 import { AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -19,6 +20,23 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Head>
           <title>AM | Blockchain Developer | Web & Android Developer</title>
         </Head>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SH8SF6K141"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-SH8SF6K141');
+        `}
+        </Script>
+        {/* /Google Analytics */}
+
         <Navbar />
         <div className="fixed w-1/6 h-screen sm:hidden 4k:hidden">
           <Sidebar />
