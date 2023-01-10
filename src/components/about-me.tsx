@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Me from '../assets/myPhoto.jpg';
+import Me from 'public/my-photo-compressed.webp';
 import styles from '../styles/External.module.css';
 
 const AboutMe = () => {
